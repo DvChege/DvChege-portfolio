@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark">
+  <title>DvChege • Portfolio</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body class="theme-neon">
+  <header class="site-header" id="top">
+    <nav class="nav container">
+      <a class="logo" href="index.html"><span class="orb">●</span> Bashir</a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">About <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="about.html">Who I Am</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="divider" aria-hidden="true"></li>
+        <li>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero container">
+    <div class="hero-left">
+      <h1 class="hero-title"><span class="badge">Hello!</span> I'm <em>DvChege</em></h1>
+      <p class="hero-sub">I turn ideas into <span class="type" data-words='["fast web apps","delightful UI","secure systems","clean code"]'></span>.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="projects.html"><i class="fa-solid fa-rocket"></i> View Work</a>
+        <a class="btn btn-ghost" href="contact.html"><i class="fa-solid fa-paper-plane"></i> Hire Me</a>
+      </div>
+      <ul class="hero-metrics">
+        <li><strong>5+</strong><span>Years</span></li>
+        <li><strong>40+</strong><span>Projects</span></li>
+        <li><strong>28+</strong><span>Happy Clients</span></li>
+      </ul>
+    </div>
+    <div class="hero-right">
+      <div class="hero-image">
+  <div class="image-placeholder">
+    <i class="fas fa-user-circle"></i>
+  </div>
+</div>
+
+      <div class="blob" data-parallax>
+        <img src="images/profile-placeholder.svg" alt="Profile illustration" />
+      </div>
+      <div class="hero-image">
+  <img src="images/profile.jpg" alt="DvChege" class="profile-pic">
+</div>
+
+      <div class="floating-cards">
+        <article class="card tilt"><i class="fa-solid fa-code"></i><span>Full‑Stack</span></article>
+        <article class="card tilt"><i class="fa-solid fa-shield-halved"></i><span>Security</span></article>
+        <article class="card tilt"><i class="fa-solid fa-pen-ruler"></i><span>UI/UX</span></article>
+      </div>
+    </div>
+    <canvas id="particles" aria-hidden="true"></canvas>
+  </section>
+
+  <!-- Featured Projects -->
+  <section class="section container">
+    <header class="section-head">
+      <h2>Featured <span>Projects</span></h2>
+      <a class="link" href="projects.html">See all</a>
+    </header>
+    <div class="grid cards-3">
+      <article class="project-card reveal">
+        <div class="thumb gradient-1"></div>
+        <h3>Tourist Management System</h3>
+        <p>Manage bookings, park entries, and analytics for KWS with a clean dashboard.</p>
+        <div class="tags"><span>Node</span><span>Express</span><span>MongoDB</span></div>
+      </article>
+      <article class="project-card reveal">
+        <div class="thumb gradient-2"></div>
+        <h3>Hospital Management</h3>
+        <p>Department flow, patient records, and triage simulation for training & demos.</p>
+        <div class="tags"><span>Python</span><span>Flask</span><span>SQLite</span></div>
+      </article>
+      <article class="project-card reveal">
+        <div class="thumb gradient-3"></div>
+        <h3>Iris Data Analysis</h3>
+        <p>Visualization and model exploration of classic Iris dataset.</p>
+        <div class="tags"><span>Pandas</span><span>Matplotlib</span><span>GitHub</span></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Skills Preview -->
+  <section class="section container">
+    <header class="section-head">
+      <h2>What I <span>Do</span></h2>
+      <a class="link" href="skills.html">Skills & Tools</a>
+    </header>
+    <div class="grid cards-4">
+      <div class="skill-card tilt">
+        <i class="fa-brands fa-html5"></i>
+        <h4>Frontend</h4><p>HTML, CSS, JavaScript, React, Vue</p>
+      </div>
+      <div class="skill-card tilt">
+        <i class="fa-solid fa-server"></i>
+        <h4>Backend</h4><p>Node, Express, REST APIs</p>
+      </div>
+      <div class="skill-card tilt">
+        <i class="fa-solid fa-database"></i>
+        <h4>Data</h4><p>Python, Pandas, Viz</p>
+      </div>
+      <div class="skill-card tilt">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h4>Security</h4><p>Networking, OWASP basics</p>
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="social">
+        <a href="https://github.com/DvChege" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/bashir-chege-ba21612a5/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="whatsapp.com/+254741571986" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto: cjosphat964@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <p>© <span id="year"></span> DvChege — Built with ♥</p>
+      <a class="to-top" href="#top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+    <canvas id="footerGrid" aria-hidden="true"></canvas>
+  </footer>
+  <script src="js/script.js"></script>
+
+</body>
+</html>

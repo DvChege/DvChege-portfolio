@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark">
+  <title>Skills • Bashir Chege</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body class="theme-neon">
+  <header class="site-header" id="top">
+    <nav class="nav container">
+      <a class="logo" href="index.html"><span class="orb">●</span> Bashir</a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">About <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="about.html">Who I Am</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="divider" aria-hidden="true"></li>
+        <li>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-hero container small">
+    <h1>Skills & Tools</h1>
+    <p>Everything I use to deliver high‑quality results.</p>
+  </section>
+
+  <section class="section container">
+    <div class="grid cards-6">
+      <div class="skill-card tilt"><i class="fa-brands fa-html5"></i><h4>HTML</h4><p>Semantic, accessible, SEO‑ready.</p></div>
+      <div class="skill-card tilt"><i class="fa-brands fa-css3-alt"></i><h4>CSS</h4><p>Flexbox, Grid, Animations.</p></div>
+      <div class="skill-card tilt"><i class="fa-brands fa-js"></i><h4>JavaScript</h4><p>ES6+, DOM, fetch, SPA</p></div>
+      <div class="skill-card tilt"><i class="fa-brands fa-react"></i><h4>React</h4><p>Hooks, Router, state.</p></div>
+      <div class="skill-card tilt"><i class="fa-solid fa-server"></i><h4>Node & Express</h4><p>REST APIs, auth.</p></div>
+      <div class="skill-card tilt"><i class="fa-solid fa-database"></i><h4>DB</h4><p>MongoDB, SQLite basics.</p></div>
+      <div class="skill-card tilt"><i class="fa-brands fa-python"></i><h4>Python</h4><p>Pandas, Matplotlib.</p></div>
+      <div class="skill-card tilt"><i class="fa-solid fa-shield"></i><h4>Security</h4><p>OWASP, hardening.</p></div>
+      <div class="skill-card tilt"><i class="fa-solid fa-diagram-project"></i><h4>Design</h4><p>Figma, UX flows.</p></div>
+      <div class="skill-card tilt"><i class="fa-brands fa-git-alt"></i><h4>Git & GitHub</h4><p>Branches, PRs.</p></div>
+      <div class="skill-card tilt"><i class="fa-solid fa-network-wired"></i><h4>Networking</h4><p>Basics, tooling.</p></div>
+      <div class="skill-card tilt"><i class="fa-solid fa-cloud-arrow-up"></i><h4>Deploy</h4><p>Static hosting, CI basics.</p></div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="social">
+                <a href="https://github.com/DvChege" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/bashir-chege-ba21612a5/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="whatsapp.com/+254741571986" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto: cjosphat964@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <p>© <span id="year"></span> DvChege — Built with ♥</p>
+      <a class="to-top" href="#top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+    <canvas id="footerGrid" aria-hidden="true"></canvas>
+  </footer>
+  <script src="js/script.js"></script>
+
+</body>
+</html>

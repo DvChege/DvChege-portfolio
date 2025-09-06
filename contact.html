@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark">
+  <title>Contact • Bashir Chege</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body class="theme-neon">
+  <header class="site-header" id="top">
+    <nav class="nav container">
+      <a class="logo" href="index.html"><span class="orb">●</span> Bashir</a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">About <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="about.html">Who I Am</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="divider" aria-hidden="true"></li>
+        <li>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-hero container small">
+    <h1>Contact</h1>
+    <p>Have a project in mind? Let's build it.</p>
+  </section>
+
+  <section class="section container contact-grid">
+    <form class="contact-form glass" action="#" method="post">
+      <label>Name<input type="text" name="name" required /></label>
+      <label>Email<input type="email" name="email" required /></label>
+      <label>Message<textarea name="message" rows="5" required></textarea></label>
+      <button class="btn btn-primary" type="submit"><i class="fa-solid fa-paper-plane"></i> Send</button>
+      <p class="muted">This is a demo form — wire it up to Formspree or your backend.</p>
+    </form>
+
+    <aside class="contact-aside">
+      <div class="card">
+        <h3>Info</h3>
+        <ul class="list">
+          <li><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</li>
+          <li><i class="fa-solid fa-envelope"></i> cjosphat964@gmai.com</li>
+          <li><i class="fa-brands fa-github"></i> github.com/DvChege</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Availability</h3>
+        <p>Open to internships, freelance, and collabs.</p>
+      </div>
+    </aside>
+  </section>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="social">
+            <a href="https://github.com/DvChege" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/bashir-chege-ba21612a5/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="whatsapp.com/+254741571986" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto: cjosphat964@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <p>© <span id="year"></span> DvChege — Built with ♥</p>
+      <a class="to-top" href="#top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+    <canvas id="footerGrid" aria-hidden="true"></canvas>
+  </footer>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
