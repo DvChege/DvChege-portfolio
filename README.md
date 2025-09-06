@@ -70,10 +70,7 @@ It includes multiple sections:
 - Tech: Flask, SQLite  
 - Features: Departments, patients, doctors, billing system  
 
-### 🔐 OWASP Playground  
-> A deliberately vulnerable app for **cybersecurity learning**.  
-- Tech: PHP, MySQL  
-- Features: SQL injection, XSS demos, authentication flaws  
+
 
 
 
